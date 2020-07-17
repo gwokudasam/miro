@@ -1,0 +1,15 @@
+<gradleEnterprise
+        xmlns="https://www.gradle.com/gradle-enterprise-maven" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.gradle.com/gradle-enterprise-maven https://www.gradle.com/schema/gradle-enterprise-maven.xsd">
+    <buildScan>
+        <!-- Behavior of publishing build scans. Possible values are ALWAYS, ON_FAILURE, ON_DEMAND. Defaults to ALWAYS. -->
+        <publish>ON_DEMAND</publish>
+        <!-- Terms of service acceptance (mandatory to publish to scans.gradle.com) -->
+        <termsOfService>
+            <!-- Address of the terms of service. Must be 'https://gradle.com/terms-of-service'. Defaults to an empty string. -->
+            <url>https://gradle.com/terms-of-service</url>
+            <!-- Signal acceptance of the terms of service. Must be 'true'. Defaults to false. -->
+            <accept>true</accept>
+        </termsOfService>
+    </buildScan>
+</gradleEnterprise>

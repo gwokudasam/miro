@@ -1,0 +1,36 @@
+
+### Mininal send
+POST http://localhost:8080/api/create
+Content-Type: application/json
+
+{
+    "x": 1,
+    "y": 7,
+    "width": 2,
+    "height": 3,
+    "lastModificationDate": null
+}
+
+### Full create, or, altertatively update of existing one
+POST http://localhost:8080/api/create
+Content-Type: application/json
+
+{
+    "id": "505ec342-ff1a-4fb9-bae0-8b09eb9713d6",
+    "x": 3,
+    "y": 3,
+    "z": 400,
+    "width": 2,
+    "height": -3,
+    "lastModificationDate": null
+}
+
+###
+GET http://localhost:8080/api/list
+Content-Type: application/json
+
+###
+GET http://localhost:8080/api/{{id}}
+
+#8f48f2ed-17d0-487f-a27c-1b5186fc59bf
+
