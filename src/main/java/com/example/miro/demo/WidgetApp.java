@@ -84,7 +84,7 @@ public class WidgetApp {
 
 
     public static WidgetRepository getWidgetRepository() {
-        return Objects.requireNonNullElseGet(getWidgetRepository(), () -> setWidgetRepository(new WidgetRepository(new InMemoryBackend())));
+        return Objects.requireNonNullElseGet(WIDGET_REPOSITORY, () -> setWidgetRepository(new WidgetRepository(new InMemoryBackend())));
     }
 
     /*
